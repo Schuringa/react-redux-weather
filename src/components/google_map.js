@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class GoogleMap extends Component {
   componentDidMount () {
@@ -14,6 +15,11 @@ class GoogleMap extends Component {
   render () {
     return <div ref='map' />
   }
+}
+
+GoogleMap.propTypes = {
+  lat: PropTypes.number,
+  lon: PropTypes.number
 }
 
 export default GoogleMap
