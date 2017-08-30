@@ -5,6 +5,11 @@ export default class SearchBar extends Component {
     return (
       <form className='input-group'>
         <input />
+        <span className='input-group-btn'>
+          <button type='submit' className='btn btn-secondary'>
+            Sumbit
+          </button>
+        </span>
       </form>
     )
   }
